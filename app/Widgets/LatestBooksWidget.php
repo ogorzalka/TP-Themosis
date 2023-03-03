@@ -31,7 +31,7 @@ class LatestBooksWidget extends \WP_Widget
     public function widget($args, $instance)
     {
         echo view('front.widgets.latest-books', [
-            'title' => $instance['title'],
+            'title' => $instance['title'] ?? '',
         ]);
     }
 }
