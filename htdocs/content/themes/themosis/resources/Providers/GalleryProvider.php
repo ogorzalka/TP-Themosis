@@ -23,7 +23,7 @@ class GalleryProvider extends ServiceProvider
      */
     public function register()
     {
-        Action::add('acf/init', [$this, 'registerFields']);
+        //Action::add('acf/init', [$this, 'registerFields']);
         Action::add('wp', [$this, 'setViewVars']);
     }
 
@@ -41,6 +41,7 @@ class GalleryProvider extends ServiceProvider
         });
     }
 
+    /*
     public function registerFields() {
         register_extended_field_group([
             'title' => 'About',
@@ -60,4 +61,5 @@ class GalleryProvider extends ServiceProvider
             ],
         ]);
     }
+    */
 }
