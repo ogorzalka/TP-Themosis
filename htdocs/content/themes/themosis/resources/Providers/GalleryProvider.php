@@ -24,17 +24,13 @@ class GalleryProvider extends ServiceProvider
     public function register()
     {
         Action::add('acf/init', [$this, 'registerFields']);
-
-        $this->setViewVars();
+        Action::add('wp', [$this, 'setViewVars']);
     }
 
-    protected function setViewVars() {
-        if (!is_front_page()) {
-            return;
-        }
-
-        View::composer('front', function ($view) {
-            $view->with('gallery_items', );
+    public function setViewVars() {
+        View::composer('pages.front', function ($view) {
+            $gallery_items = get_field('gallery_image');
+            $view->with('gallery_items', $gallery_items);
         });
     }
 
