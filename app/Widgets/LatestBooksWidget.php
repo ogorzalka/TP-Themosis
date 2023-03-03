@@ -30,8 +30,13 @@ class LatestBooksWidget extends \WP_Widget
 
     public function widget($args, $instance)
     {
+        $field_key = isset($args['widget_id']) ? 'widget_' . $args['widget_id'] : false;
+
+        $content = $field_key ? get_field('widget_content', $field_key) : '';
+
         echo view('front.widgets.latest-books', [
             'title' => $instance['title'] ?? '',
+            'content' => $content
         ]);
     }
 }
