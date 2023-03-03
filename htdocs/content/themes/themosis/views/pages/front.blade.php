@@ -10,7 +10,7 @@
                 </x-title>
             </header>
 
-            <x-gallery.images :items="$gallery_items" :size="config('gallery.images.size')" />
+            <x-gallery.images :items="$gallery_items" :size="$image_size" />
 
         @while(have_posts())
             @php(the_post())

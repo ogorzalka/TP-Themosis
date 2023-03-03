@@ -2,6 +2,7 @@
 
 namespace App\Hooks;
 
+use App\Widgets\LatestBooksWidget;
 use Themosis\Hook\Hookable;
 
 class Widgets extends Hookable
@@ -19,7 +20,7 @@ class Widgets extends Hookable
      * @var array
      */
     public $widgets = [
-        //
+        LatestBooksWidget::class,
     ];
 
     /**

@@ -29,8 +29,15 @@ class GalleryProvider extends ServiceProvider
 
     public function setViewVars() {
         View::composer('pages.front', function ($view) {
+
+            $image_size = config('gallery.images.size');
             $gallery_items = get_field('gallery_image');
-            $view->with('gallery_items', $gallery_items);
+
+            $view->with([
+                'gallery_items' => $gallery_items,
+                'image_size' => $image_size
+            ]);
+
         });
     }
 
