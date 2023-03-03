@@ -178,7 +178,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
+        \App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
     ],
 
@@ -196,7 +196,9 @@ return [
         App\Hooks\Application::class,
         App\Hooks\Compat::class,
         App\Hooks\Mail::class,
-        App\Hooks\Widgets::class
+        App\Hooks\Widgets::class,
+        \App\Hooks\DisableSeoRobot::class,
+        \App\Hooks\BookPostType::class,
     ],
 
     /*

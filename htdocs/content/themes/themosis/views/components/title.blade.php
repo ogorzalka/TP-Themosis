@@ -1,3 +1,4 @@
-<h1 class="page-title screen-reader-text">
-    {{ $slot }}
-</h1>
+<h{{ $level }} class="page-title" {{ $attributes }}>
+    {{ $slot }}<br>
+    Coucou: {{ $toto }}
+</h{{ $level }}>

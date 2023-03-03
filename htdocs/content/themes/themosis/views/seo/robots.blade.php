@@ -1,0 +1,1 @@
+{{ get_option('th_robots_txt') }}

@@ -28,6 +28,7 @@ node_modules/
 /htdocs/cms/
 /htdocs/content/uploads/
 /htdocs/content/upgrade/
+/.data
 
 ### Environment Credentials
 .env

@@ -87,6 +87,13 @@ define('WP_DEFAULT_THEME', 'themosis');
 */
 define('APP_TD', env('APP_TD', 'themosis'));
 
+
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
+    $_SERVER['HTTPS'] = 'on';
+} elseif (isset($_SERVER['X_FORWARDED_PROTO']) && $_SERVER['X_FORWARDED_PROTO'] == 'https') {
+    $_SERVER['HTTPS'] = 'on';
+}
+
 /*
 |--------------------------------------------------------------------------
 | JetPack
