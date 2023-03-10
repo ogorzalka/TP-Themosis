@@ -1,0 +1,13 @@
+{
+  "name": "themosis/gallery",
+  "title": "Galerie photo",
+  "description": "Liste les images d'une galerie",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["galerie", "photos"],
+  "acf": {
+    "mode": "preview",
+    "renderCallback": "\\Theme\\Providers\\GalleryBlock::render"
+  },
+  "align": "full"
+}

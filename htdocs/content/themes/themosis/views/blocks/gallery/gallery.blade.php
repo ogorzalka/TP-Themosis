@@ -1,0 +1,1 @@
+<x-gallery.images :items="$gallery_image" :size="$image_size" />

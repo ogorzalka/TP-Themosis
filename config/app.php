@@ -199,6 +199,7 @@ return [
         App\Hooks\Widgets::class,
         \App\Hooks\DisableSeoRobot::class,
         \App\Hooks\BookPostType::class,
+        \App\Hooks\CarbonFields::class,
     ],
 
     /*

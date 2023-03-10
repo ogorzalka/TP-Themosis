@@ -11,7 +11,12 @@ class BlockProvider extends ServiceProvider
         register_block_type( get_stylesheet_directory(). DS. 'views' . DS . 'blocks'. DS. 'latest-books');
     }
 
-    public static function render() {
-        echo view('blocks.latest-books.book-list');
+    public static function render($block) {
+        $data = get_fields() ?? [];
+        $data['block'] = $block;
+        echo  view(
+            'blocks.latest-books.book-list',
+            $data
+        )->render();
     }
 }

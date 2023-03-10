@@ -1,1 +1,1 @@
-{!! wp_get_attachment_image($item, $size) !!}
+{!! wp_get_attachment_image($item['ID'], $size) !!}
