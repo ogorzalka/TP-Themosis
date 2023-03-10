@@ -7,7 +7,7 @@
   "keywords": ["books", "livres"],
   "acf": {
     "mode": "preview",
-    "renderTemplate": "testimonial.php"
+    "renderCallback": "\\Theme\\Providers\\BlockProvider::render"
   },
   "align": "full"
 }
