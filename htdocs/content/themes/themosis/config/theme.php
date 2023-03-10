@@ -30,6 +30,7 @@ return [
         Theme\Providers\RouteServiceProvider::class,
         Theme\Providers\RobotTxtAdmin::class,
         \Theme\Providers\GalleryProvider::class,
+        \Theme\Providers\BlockProvider::class,
     ],
 
     /*

@@ -20,7 +20,7 @@ class Widgets extends Hookable
      * @var array
      */
     public $widgets = [
-        LatestBooksWidget::class,
+        //LatestBooksWidget::class,
     ];
 
     /**

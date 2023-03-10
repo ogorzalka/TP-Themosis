@@ -1,0 +1,13 @@
+{
+  "name": "themosis/latest-books",
+  "title": "Derniers livres",
+  "description": "Liste les derniers livres",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["books", "livres"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "testimonial.php"
+  },
+  "align": "full"
+}
